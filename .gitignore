@@ -1,0 +1,56 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Backend environment files
+backend/.env
+backend/.env.*
+
+# Dependencies and build output
+backend/node_modules/
+backend/dist/
+
+# Private keys and certificates
+*.pem
+*.key
+
+# Keep private files out of GitHub
+backend/uploads/
+backend/node_modules/
+node_modules/
+.env
+.env.*
+backend/.env
+backend/.env.*
+!.env.example
+
+# Local admin maintenance scripts
+backend/makeAdmin.js
+backend/checkAdminPassword.js
