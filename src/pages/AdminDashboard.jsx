@@ -60,12 +60,9 @@ const AdminDashboard = () => {
   useEffect(() => {
     fetchOverview();
   }, []);
-
   const handleLogout = () => {
     localStorage.removeItem("rentoToken");
-    localStorage.removeItem("rentoAgent");
-
-    window.location.href = "/agent/login";
+    window.location.href = "/";
   };
 
   return (
