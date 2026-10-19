@@ -16,7 +16,7 @@ import {
   X,
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000";
+const API_URL = "https://rento-api-rime.onrender.come.onrender.come.onrender.come.onrender.com";
 
 function ListProperty() {
   const navigate = useNavigate();

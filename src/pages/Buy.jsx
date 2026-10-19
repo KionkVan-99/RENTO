@@ -27,7 +27,7 @@ import "../styles/buy.css";
 // API
 // ======================================================
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://rento-api-rime.onrender.com";
 const API_URL = `${API_BASE_URL}/api/properties`;
 
 // ======================================================

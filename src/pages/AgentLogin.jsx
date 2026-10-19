@@ -9,7 +9,7 @@ import {
   Mail,
 } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://rento-api-rime.onrender.com/api/auth";
 
 function AgentLogin() {
   const navigate = useNavigate();

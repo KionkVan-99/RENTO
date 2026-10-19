@@ -20,7 +20,7 @@ import {
   EyeOff,
 } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://rento-api-rime.onrender.come.onrender.com";
 
 const AgentPublicProfile = () => {
   const { id } = useParams();

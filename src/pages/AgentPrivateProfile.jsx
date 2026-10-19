@@ -19,7 +19,7 @@ import {
   LogOut,
 } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://rento-api-rime.onrender.come.onrender.come.onrender.come.onrender.com";
 
 const AgentPrivateProfile = () => {
   const { id } = useParams();

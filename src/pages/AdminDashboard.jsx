@@ -10,7 +10,7 @@ import {
   RefreshCw,
 } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://rento-api-rime.onrender.com";
 
 const AdminDashboard = () => {
   const [stats, setStats] = useState({

@@ -26,7 +26,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 
 import "../index.css";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://rento-api-rime.onrender.come.onrender.com";
 const API_URL = `${API_BASE_URL}/api/properties`;
 const UPLOAD_URL = `${API_BASE_URL}/api/upload`;
 

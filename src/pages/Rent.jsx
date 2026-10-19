@@ -23,7 +23,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { properties as localProperties } from "../data/properties";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://rento-api-rime.onrender.com/api";
 
 const sampleRentals = [
   {

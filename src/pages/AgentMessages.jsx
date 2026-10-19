@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:5000/api/messages";
+const API_URL = "https://rento-api-rime.onrender.come.onrender.come.onrender.come.onrender.come.onrender.com/api/messages";
 
 function AgentMessages() {
   const [messages, setMessages] = useState([]);

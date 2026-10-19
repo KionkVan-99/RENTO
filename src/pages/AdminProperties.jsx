@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 import "../index.css";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://rento-api-rime.onrender.com";
 
 function AdminProperties() {
   const [properties, setProperties] = useState([]);
