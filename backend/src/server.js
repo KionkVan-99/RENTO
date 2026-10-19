@@ -25,18 +25,30 @@ const __dirname = path.dirname(__filename);
 // MIDDLEWARE
 // ======================================================
 
-app.use(cors());
+const allowedOrigins = [
+  "https://rento-web-bay.vercel.app",
+  "http://localhost:5173",
+];
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error(`Not allowed by CORS: ${origin}`));
+      }
+    },
+  }),
+);
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 // ======================================================
 // STATIC FILES
 // ======================================================
 
-app.use(
-  "/uploads",
-  express.static(path.join(__dirname, "../uploads"))
-);
+app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
 
 // ======================================================
 // API STATUS
@@ -73,7 +85,5 @@ app.use("/api/payments", paymentRoutes);
 // ======================================================
 
 app.listen(PORT, () => {
-  console.log(
-    `🚀 RENTO server running on http://localhost:${PORT}`
-  );
+  console.log(`🚀 RENTO server running on http://localhost:${PORT}`);
 });
